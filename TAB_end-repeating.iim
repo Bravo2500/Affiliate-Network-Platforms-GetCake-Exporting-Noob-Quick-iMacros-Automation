@@ -1,0 +1,3 @@
+'TAB_end-repeating.iim
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 50

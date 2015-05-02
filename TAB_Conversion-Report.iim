@@ -1,0 +1,5 @@
+'#TAB_Conversion-Report
+TAG POS=1 TYPE=SPAN ATTR=TXT:Conversion<SP>Report
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:Conversion<SP>Report

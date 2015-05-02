@@ -1,0 +1,2 @@
+PROMPT "The wait (uh let's try 5 seconds at first)" !VAR1
+PROMPT "The folder #" !VAR3

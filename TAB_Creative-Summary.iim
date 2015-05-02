@@ -1,0 +1,6 @@
+'#TAB_Creative-Summary - wait actually this isn't even available in aff.com. perhaps because nothing was ran?
+'if so then this isn't the 30 days one, subaff is. uh leave this out for now?
+TAG POS=1 TYPE=SPAN ATTR=TXT:Creative<SP>Summary
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:Creative<SP>Summary

@@ -1,0 +1,17 @@
+'#SIDEbar_Offers
+TAG POS=1 TYPE=SPAN ATTR=TXT:Offers
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:Offers
+TAG POS=1 TYPE=DIV ATTR=TXT:Rows<SP>Per<SP>Page:*
+TAG POS=R1 TYPE=DIV ATTR=TXT:200
+WAIT SECONDS={{!VAR1}}
+'Save a screenshot of the offers page
+SAVEAS TYPE=PNG FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=offers_{{!NOW:yyyy-mm-dd}}
+'Save html of the offers page
+SAVEAS TYPE=HTM FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=offers_{{!NOW:yyyy-mm-dd}}
+'PAUSE so can do a full proper save of the offers page and wget - this is the way to do it to get unlimited time :)
+SET !SINGLESTEP YES
+PAUSE
+SET !SINGLESTEP NO
+'uh just manually do all this, lol

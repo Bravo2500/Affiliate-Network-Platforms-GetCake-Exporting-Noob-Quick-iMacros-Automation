@@ -1,0 +1,23 @@
+'initial-specifying-which
+'trying to set download folder
+' NOT ONE CHROME
+'ONDOWNLOAD FOLDER=/Users/{USER}/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=* WAIT=YES
+'
+'refer to http://wiki.imacros.net/!WAITPAGECOMPLETE - default is no
+'if YES iMacros will wait until the top frame is completely loaded (the web browser receives the document complete event) b4 going to next macro
+'Some sites/pages do not correctly signal that the top frame is completely loaded, and setting to YES will cause those pages to timeout
+'I hope that this stays this way and doesn't revert every time. And that it actually works.
+' NOT ON CHROME OR FF
+'SET !WAITPAGECOMPLETE YES
+'
+'total page load timeout
+' Again - hoping that this doesn't reset every page
+SET !TIMEOUT_PAGE 100
+'
+'Integer that gives the number of seconds a page may take to load completely.
+'Default: 1/10 of !TIMEOUT_PAGE
+'which means 6 seconds if !TIMEOUT_PAGE has the default value of 60 seconds
+' Again - hoping that this doesn't reset every on every step
+SET !TIMEOUT_STEP 50
+'
+SET !ERRORIGNORE YES

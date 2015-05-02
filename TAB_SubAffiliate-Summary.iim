@@ -1,0 +1,9 @@
+'#TAB_SubAffiliate-Summary
+' this only works for 30 days, correct? so not doing this right now
+' but when i see where most money is made, if in small moments, pinpoint those manually and get that going!
+TAG POS=1 TYPE=SPAN ATTR=TXT:SubAffiliate<SP>Summary
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:SubAffiliate<SP>Summary
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 50

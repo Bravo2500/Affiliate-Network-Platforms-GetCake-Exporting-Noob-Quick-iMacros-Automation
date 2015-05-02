@@ -1,0 +1,6 @@
+URL GOTO=http://demo.getcake.com/?lm_id=sessionexpired
+URL GOTO=http://demo.getcake.com/
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:login.ashx?tp=1 ATTR=ID:u CONTENT=
+SET !ENCRYPTION NO
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ACTION:login.ashx?tp=1 ATTR=ID:password CONTENT=jfjwrinwfiwnriwr
+TAG POS=1 TYPE=BUTTON FORM=ACTION:login.ashx?tp=1 ATTR=ID:submitButton

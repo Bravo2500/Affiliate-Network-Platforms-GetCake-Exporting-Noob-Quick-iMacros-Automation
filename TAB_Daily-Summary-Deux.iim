@@ -1,0 +1,7 @@
+'#TAB_Daily-Summary
+'going back, babe
+'TAG POS=1 TYPE=SPAN ATTR=TXT:Daily<SP>Summary
+'TAG POS=1 TYPE=SPAN ATTR=LI:affiliate-reports__daily_summary
+'WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:Daily<SP>Summary

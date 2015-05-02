@@ -1,0 +1,15 @@
+'#SIDEbar_Reports
+'Save a screenshot of the dashboard
+SAVEAS TYPE=PNG FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=dashboard_{{!NOW:yyyy-mm-dd}}
+'Save html of the dashboard
+SAVEAS TYPE=HTM FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=dashboard_{{!NOW:yyyy-mm-dd}}
+'
+TAG POS=1 TYPE=SPAN ATTR=TXT:Reports
+WAIT SECONDS={{!VAR1}}
+SET !TIMEOUT_STEP 100
+TAG POS=1 TYPE=LI ATTR=CLASS:<SP>x-tab-strip-active&&TXT:Daily<SP>Summary
+'
+'Save a screenshot of the initial reports page
+SAVEAS TYPE=PNG FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=inital-reports_{{!NOW:yyyy-mm-dd}}
+'Save html of the initial reports page
+SAVEAS TYPE=HTM FOLDER=/Users/{USER}telephonecall/Dropbox/{FOLDER-1}/Exports/{FOLDER-2}/{{!VAR3}} FILE=initial-reports_{{!NOW:yyyy-mm-dd}}
